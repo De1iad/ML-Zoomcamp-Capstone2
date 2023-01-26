@@ -1,11 +1,21 @@
-# TensorFlow 
+# Flower Classification
 
-This resource gives you a starting example for running TensorFlow training tasks on GPU inside Saturn Cloud. We will train a model with TensorFlow on a single GPU. 
+This project is an attempt to classify flowers using a neural network.
+Dataset is from https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html?ref=hackernoon.com. Nilsback, M-E. and Zisserman, A.
+Model requires the dataset images https://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz.
+Model also requires the image labels from https://www.robots.ox.ac.uk/~vgg/data/flowers/102/imagelabels.mat.
 
+Having the ability to identify plant species without the help of an expert is valuable. A model would allow unskilled persons to contribute to the documenting of species in an area far wider than a few experts alone could cover. Monitoring of the spread of species is important in quantifying the effects of climate change and in preserving the more threatened species.
 
+This model attempts to classify pictures of 102 different classes of flowers.
 
-## Extra Resources
-* [Multi-GPU TensorFlow on Saturn Cloud](https://saturncloud.io/blog/tensorflow_intro/)
-* [Overview on GPUs](https://saturncloud.io/docs/reference/intro_to_gpu/)
-* [Learn more about TensorFlow](https://www.tensorflow.org/)
-* Prefer to use PyTorch? [Visit our docs about that!](https://saturncloud.io/docs/examples/pytorch/)
+Database was separated into classes by running separate.py, which uses the imagelabels.mat to classify each image.
+separate.py also splits the images into train/val/test folders.
+
+## Training model
+* Install requirements in requirements.txt.
+* Run train.py.
+* Run convert.py
+
+## Hosting locally
+
