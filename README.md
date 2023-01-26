@@ -12,10 +12,13 @@ This model attempts to classify pictures of 102 different classes of flowers.
 Database was separated into classes by running separate.py, which uses the imagelabels.mat to classify each image.
 separate.py also splits the images into train/val/test folders.
 
+## Model is contained in git repo as 'model.tflite' however it can be remade using the below commands.
+
 ## Training model
 * Install requirements in requirements.txt.
 * Run train.py.
 * Run convert.py
 
 ## Hosting locally
-
+* Run predict.py
+* (I ran out of time)

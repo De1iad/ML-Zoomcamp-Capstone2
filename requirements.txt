@@ -7,3 +7,4 @@ keras_image_helper
 idx2numpy
 numpy
 flask
+tflite-runtime
